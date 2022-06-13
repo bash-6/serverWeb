@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Administracion de Productos</title>
+		<link rel="stylesheet" href="./productos/normalize.css">
+		<link rel="stylesheet" href="./productos/style.css">
+	</head>
+	<body>
+		<!-- <button id="clean" class="cancelarProceso">limpiar Storage</button> -->
+
+		<section class="headAdmiProductos">
+			<button id="addProduct">+</button>
+			<input type="text" value="" name="descripcionitem" placeholder="buscar por nombre" class="cajaBuscar"id="descripcionitem"/>
+		</section>
+
+		<section class="agregandoProducto">
+			<h1 class="tituloFormulario">creando producto</h1>
+			<form id="crearProducto" class="formularioProducto" action="/api/productos" method="POST" >
+				<input type="text" value="" class="descripcion"name="crearDescripcion" id="crearDescripcion" placeholder='DESCRIPCION'/>
+				<input type="text" value="" class="url" name="crearUrl" id="crearUrl" placeholder="URL IMAGEN"/>
+				<input type="number" value="" class="unidad" name="crearUnidad" id="crearUnidad" placeholder="CANTIDAD"/>
+				<input type="number" step=".01" value="" class="precio" name="crearPrecio" id="crearPrecio" placeholder="PRECIO"/>
+				<button id="cancelarCrearProducto">TERMINAR</button>
+				<input type="submit" value="CREAR" class="enviar" name="enviarProductoCreado" id="enviarProductoCreado"/>
+			</form>
+		</section>
+		<section class="editandoProducto">
+			<h1 class="tituloFormulario">editando producto</h1>
+			<form id="editandoProducto" class="formularioProductoEditar" action="" method="PATCH" accept-charset="utf-8">
+				<label class="codigo">codigo:
+					<input type="text" value="" name="id" id="id" disabled/>
+				</label>
+
+				<label class="descripcion">Descripcion:
+					<input type="text" value=""name="editandoDescripcion" id="editandoDescripcion" placeholder='DESCRIPCION'/>
+				</label>
+				<label class="url">Url imagen:
+					<input type="text" value="" name="editandoUrl" id="editandoUrl" placeholder="URL IMAGEN"/>
+				</label>
+				<label class="unidad">Cantidad:
+					<input type="number" value="" name="editandoUnidad" id="editandoUnidad" placeholder="CANTIDAD"/>
+				</label>
+				<label class="precio">Precio:
+					<input type="number" step=".01" value="" name="editandoPrecio" id="editandoPrecio" placeholder="PRECIO"/>
+				</label>
+				<button id="cancelaredicion">CANCELAR</button>
+				<input type="submit" value="GUARDAR" class="enviar" name="guardarProductoEditado" id="guardarProductoCreado"/>
+			</form>
+		</section>
+
+		<section class="listadoProductos">
+			<h2 class="titulo">productos creados</h2>
+			<div id="resultado"></div>
+		</section>
+
+
+		<script src="./productos/main.js"></script>
+	</body>
+</html>

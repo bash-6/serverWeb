@@ -1,0 +1,461 @@
+.sms {
+	padding: 10px;
+}
+#sms {
+	display: flex;
+}
+#sms input {
+	width: 100%;
+	flex:2;
+}
+#sms button {
+	flex:1;
+	text-align: center;
+}
+#enviarSms {
+	border: none;
+}
+.headerTop {
+	display: flex;
+	justify-content: space-between;
+	z-index: 3000;
+	background-color:green;
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.headerTop > i {
+	font-size: 1.9rem;
+	display: block;
+	padding: 10px;
+	width: 50px;
+	height: 40px;
+}
+.headerTop h1 {
+	font-size: 1.1rem;
+	position: relative;
+	right: 100px;
+}
+#buscador input {
+	position: fixed;
+	height: 50px;
+	width: 90%;
+	margin-left: auto; margin-right: auto;
+	top: 60px;
+	z-index: 2000;
+
+}
+#api {
+	background-color:green;
+	position: fixed;
+	width: 100%;
+	top: 50px;
+	transform: translateY(-120%);
+	left: 0;
+	color: white;
+	display: grid;
+	z-index: 3000;
+}
+#api button {
+	border: none;
+	background-color:transparent;
+	color: white;
+	margin: 0;
+	font-size: 1.1rem;
+	min-height: 50px;
+	border-bottom:1px solid white;
+	padding: 10px;
+}
+
+img{
+	width: 100%;
+}
+
+.headTable {
+	display: flex;
+	padding: 5px;
+	background-color:green;
+	opacity:.7;
+	font-size: .9rem;
+	color: white;
+	margin: 0;
+}
+.headTable span {
+	flex: 1;
+	text-align: right;
+}
+.headTable span:first-child {
+	text-align: center;
+	flex: 2;
+}
+#bodyTable {
+	display: flex;
+	border: 1px solid green;
+	font-size: .9rem;
+}
+#bodyTable span {
+	text-align: center;
+	position: relative;
+	flex:3;
+}
+
+#bodyTable span:nth-child(2),
+#bodyTable span:nth-child(3),
+#bodyTable span:nth-child(4) {
+	line-height:2.9;
+	flex:1;
+}
+#bodyTable span:nth-child(4) button {
+	padding: 10px;
+	background-color:red;
+	border: none;
+	border-radius: 5px;
+	min-width: 50px;
+	float: right;
+	color: white;
+	display: block;
+	opacity:.8;
+	margin-left: auto; margin-right: auto;
+}
+.fa-trash-can {
+	font-size: 1.1rem;
+}
+	
+
+#bodyTable span:nth-child(2)::before {
+	content: '';
+	width: 90%;
+	height: 100%;
+	background-color:green;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity:.2;
+}
+
+/*
+.resultado {
+	display: flex;
+	justify-content: space-around;
+	background-color:orange;
+	top: 30px;
+	color: black;
+	max-height: 50px;
+	margin-top: .1px;
+	position: fixed;
+	width: 95%;
+	min-width: 300px;
+	padding: 10px;
+	max-width: 800px;
+	z-index: 3000;
+
+}
+
+
+
+.contenedor-listaCompras input {
+	min-height: 30px;
+}
+*/
+
+	/*
+.agregar {
+	grid-area: btn;
+}
+*/
+figure + div {
+	grid-area: operacion;
+	display: flex;
+	/* margin-bottom: 30px; */
+	/* margin-left: 10px; */
+	width: 80%;
+	margin-left: auto; margin-right: auto;
+}
+
+figcaption {
+	font-size: 1rem;
+	text-align: center;
+}
+figure img {
+	width: 70%;
+}
+
+@media screen and (min-width: 1000px) {
+	figure img {
+		width: 90%;
+	}
+}
+figcaption span {
+	font-size: 1.2rem;
+	color: green;
+}
+figure + div input {
+	width: 100%;
+	flex: 2;
+	font-size: 1rem;
+	text-align: center;
+}
+figure + div button {
+	flex:1;
+	min-height: 30px;
+	font-size: 32px;
+}
+figure {
+	display: grid;
+	place-items: center;
+}
+#botones input {
+	width: 100%;
+}
+#botones button{
+	width: 40px;
+	font-size: 30px;
+	height: 40px;
+}
+
+/* carrito de compras */
+.carritoCompras {
+	position: fixed;
+	right: 5px;
+	top: 5px;
+	width: 40px;
+	z-index: 2000;
+	height: 50px;
+	text-align: center;
+	display: grid;
+	background-color:green;
+	border-radius: 10px;
+	padding: 7px;
+}
+#mensajeCarrito {
+	cursor: pointer;
+	font-size: 1.2rem;
+}
+.carritoCompras i  {
+	font-size: 30px;	
+	color: white;
+}
+.carritoCompras span  {
+	font-size: 1.1rem;
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-right: auto; margin-left: auto;
+	border-radius: 50%;
+	color: green;
+	background-color: white;
+}
+
+/* lista de compras */
+
+/* sacar cuenta */
+.sacarCuenta {
+	display: flex;
+	gap: 10px;
+	font-size: 1.1rem;
+	width: 90%;
+	margin-right: auto; margin-left: auto;
+	background-color:green;
+	padding: 10px;
+}
+.sacarCuenta input {
+	font-size: 1rem;
+	flex:2;
+}
+.sacarCuenta input {
+	flex:1;
+}
+.sacarCuenta + div {
+	margin-top: 10px;
+	font-size: 1.1rem;
+	background-color:green;
+	padding: 10px;
+	width: 90%;
+	margin-right: auto; margin-left: auto;
+	display: flex;
+	gap:10px;
+}
+.sacarCuenta + div input {
+	font-size: 1.1rem;
+	flex:2;
+}
+.contenedor-listaCompras button {
+	min-height: 30px;
+}
+
+.subtotal {
+	font-size: 1.3rem;	
+}
+
+/* card generate */
+#listaCompras {
+	min-width: 300px;
+	display: none;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 50px max-content 1fr 60px;
+	grid-template-areas: 'aPagar aCobrar'
+ 'etiqueta etiqueta'
+	'body body'
+ 	'cerrar cerrar';
+	width: 100%;
+	height: 100%;
+	margin-left: auto; margin-right: auto;
+
+	position: fixed;
+	background-color: white;
+	z-index: 5000;
+	top: 0;
+	left: 0;
+}
+
+#aPagar {
+	grid-area: aPagar;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#aPagar div {
+	flex: 1;
+}
+#total {
+	color: orange;
+}
+
+#vuelto {
+	color: red;
+}
+
+#aCobrar {
+	grid-area: aCobrar;
+	display: flex;
+}
+#efectivo {
+	flex: 1;
+	width: 100%;
+	font-size: 1.1rem;
+}
+#pagar {
+	flex:1;
+	color: white;
+	background-color:green;
+	border: none;
+	font-size: 1.1rem;	
+}
+#etiqueta {
+	grid-area: etiqueta;
+}
+
+#tableBody {
+	grid-area: body;
+	overflow: scroll;
+}
+
+#cerrarListaCompras {
+	grid-area: cerrar;
+	display: flex;
+}
+#cerrarListaCompras button:first-child {
+	background-color:green;
+}
+#cerrarListaCompras button:last-child {
+	background-color:red;
+}
+#cerrarListaCompras button {
+	flex: 1;
+	font-size: 2.9rem;	
+	color: white;
+	opacity:.8;
+}
+.contenedor-subtotal {
+	grid-area: total;
+	display: flex;
+	justify-content: center;
+	font-size: 1.3rem;
+	line-height:2.2;
+}
+
+.add {
+	color: white;
+	background-color:green;
+	border: none;
+	border-radius: 10px 0px 0px 10px;
+	font-weight: bold;
+	height: 50px;
+	width: 50px;
+	display: block;
+}
+.agregar {
+	border: none;
+	border-radius: 5px;
+	min-width: 100px;
+	width: 100%;
+	height: 50px;
+	font-size: 1.1rem;
+	padding: 5px;
+}
+
+.rest {
+	color: white;
+	background-color:red;
+	font-weight: bold;
+	border: none;
+	border-radius: 0px 10px 10px 0px;
+	height: 50px;
+	display: block;
+	width: 50px;
+}
+
+#grillaProductos {
+	margin-top: 80px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+	height: 100%;
+	font-size: .9rem;
+	gap: 25px;
+}
+.contenedor-venta {
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.30);
+	width: 90%;
+	height: 100%;
+	border: 1px solid green;
+	margin-left: auto; margin-right: auto;
+	display: grid;
+	grid-template-areas: 'img img'
+	'nombre precio'
+	'botones aCuenta'
+	'agregar agregar';
+	gap:5px;
+}
+
+.contenedor-venta input {
+	font-size: 1.2rem;
+}
+.contenedor-venta .cantidad {
+	height: 85%
+}
+.contenedor-venta figure {
+	grid-area: img;
+}
+.contenedor-venta .nombre {
+	font-size: .9rem;
+	color: black;
+	grid-area: nombre;
+}
+.contenedor-venta .precio {
+	position: relative;
+	margin-left: 10px;
+	grid-area: precio;
+}
+
+.contenedor-botones {
+	grid-area: botones;
+	width: 100%;
+}
+.contenedor-subtotal {
+	grid-area: aCuenta;
+}
+.agregar {
+	grid-area: agregar;
+}

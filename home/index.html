@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Apis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index"/>
+	<link rel="canonical" href="https://www.luiscode.cf/" />
+	<meta name="description" content="description site"/>
+	<meta name="author" content="luiscode" />
+	<meta name="copyright" content="Propietario del copyright" />
+	<link rel="stylesheet" href="./home/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header class="headerTop">
+		<i id="menuBtn" class="fa-solid fa-bars"></i>
+		<h1>Tienda cristina</h1>	
+		<div id="mensajeCarrito" class="carritoCompras">
+			<span id="numeroVentas">0</span>
+			<i class="fa-solid fa-cart-shopping"></i>
+		</div>
+	</header>
+	<section id="api">
+	<button><a href="./ingresar">administrar productos</a></button>
+	<button id="lacteo">ver lacteos</button>
+	<button id="menestra">ver cereales</button>
+	<button id="aceite">ver aceites</button>
+	<button id="todo">ver todo</button>
+	</section>
+
+	<div id="listaCompras">
+
+			<!-- vuelto  pagar -->
+			<div id="aPagar">
+				<div>
+					<span>Total:</span>
+					<span id="total">0.0</span>
+				</div>
+				<div>
+					<span>Vuelto:</span>
+					<span id="vuelto">0.0</span>
+				</div>
+			</div>
+			<div id="aCobrar">
+				<input type="number" placeholder="efectivo" name="" id="efectivo"/>
+				<button id="pagar">pagar</button>
+			</div>
+
+		<p id="etiqueta" class="headTable"><span>descripcion</span><span>und</span><span>costo</span><span>borrar</span></p>
+
+		<div id="tableBody"></div>
+		
+		<div id="cerrarListaCompras">
+			<button id="cancelar"><i class="fa-solid fa-circle-arrow-left"></i></button>	
+			<div id="sms">
+				<input type="number" placeholder="numero" name="" id="infoTelefonico"/>
+				<button><a id="enviarSms"><i class="fa-solid fa-comment-sms"></i></a></button>
+			</div>
+			<button id="eliminar"><i class="fa-solid fa-circle-xmark"></i></button>
+		</div>
+
+	</div>
+	<div id="buscador">
+		<input type="text" value="" name="descripcionitem" placeholder="buscar por nombre" class="cajaBuscar"id="descripcionitem"/>
+	</div>	
+
+	<section id="grillaProductos">
+	</section>
+	<!-- <a href="https://api.whatsapp.com/send?phone=51988113522&text=Hola,%20¿Qué%20tal%20%estás?">enviar</a> -->
+	<!-- <a title="Click para chatear" href="https://api.whatsapp.com/api/send?phone=988113522" target="_blank" rel="noopener">Envíanos un mensaje por WhatsApp</a> -->
+	<script src="./home/main.js"></script>
+</body>
+</html>
